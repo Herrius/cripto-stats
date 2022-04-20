@@ -1,38 +1,60 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: hsl(34, 71%, 67%);
+  /* background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(3) rotate(175)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(48,82.8%,88.6%,1)'/><path d='M0 40h40m-10-5.578v11.156M10 34.422v11.156M30-5.578V5.578M10-5.578V5.578M0 14.987v11.156m40-11.156v11.156M20 14.422v11.156M0 20h40M0 0h40'  stroke-linecap='square' stroke-width='2' stroke='hsla(209,77.4%,22.5%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>"); */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='hsla(25, 40%, 10%, 1)' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  margin-top: 1.5rem;
+  font-size: 3.5rem;
+  color: #222831;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtitle {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: #393e46;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif;
+}
+
+.prices-container {
+  max-width: 1200px;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.price-card {
+  background: #fbf6f0;
+  margin: 0 2rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.price-type {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #393e46;
+  margin-bottom: 1rem;
+}
+
+.price {
+  color: #222831;
+  font-size: 3rem;
 }
